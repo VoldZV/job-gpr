@@ -1,4 +1,6 @@
 {
+
+  "homepage": "https://voldzv.github.io/job-gpr/",
   "name": "todolist-training",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +19,7 @@
     "@types/react-redux": "^7.1.27",
     "@types/styled-components": "^5.1.26",
     "@types/uuid": "^9.0.2",
+    "gh-pages": "^6.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.3",
@@ -28,6 +31,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "deploy" : "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
