@@ -15,6 +15,7 @@ type GprObjectPropsType = {
 }
 export const GprObject: React.FC<GprObjectPropsType> = ({gprObject, index}) => {
     const beginning = gprObject.data[0].date.substring(0, 7)
+
     const ending = gprObject.data[gprObject.data.length - 1].date.substring(0, 7)
 
     const filter = useSelector<AppStateType, FilterType>(state => state.gprObjects.filter)
